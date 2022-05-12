@@ -18,9 +18,21 @@ class Solution:
         #     r = (r + num/r) // 2
         # return r*r == num
 
-        # Solution 3 Brute force
+        # Solution 3 Brute force O(sqrt(n))
         # for i in range(1, num + 1):
         #     if i * i == num:
         #         return True
         #     elif i * i > num:
         #         return False
+
+        # Solution 4 Binary search O(log(n))
+        # l, r = 1, num
+        # while l <= r:
+        #     mid = (l + r) // 2
+        #     if mid * mid > num:
+        #         r = mid - 1
+        #     elif mid * mid < num:
+        #         l = mid + 1
+        #     else:
+        #         return True
+        # return False
