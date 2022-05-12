@@ -36,3 +36,12 @@ class Solution:
         #     else:
         #         return True
         # return False
+
+        # Solution 5 Linear
+        # i = 1
+        # while i ** 2 <= num:
+        #     if i ** 2 == num:
+        #         return True
+        #     else:
+        #         i += 1
+        # return False
