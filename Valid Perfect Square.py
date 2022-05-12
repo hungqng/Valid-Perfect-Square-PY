@@ -12,3 +12,15 @@ class Solution:
             i+=2
         return x==num
 
+        # Solution 2 Newton's method
+        # r = num
+        # while r*r > num:
+        #     r = (r + num/r) // 2
+        # return r*r == num
+
+        # Solution 3 Brute force
+        # for i in range(1, num + 1):
+        #     if i * i == num:
+        #         return True
+        #     elif i * i > num:
+        #         return False
